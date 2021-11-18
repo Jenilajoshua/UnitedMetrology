@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+h1{
+    font-family: 'Russo One', sans-serif;
+
+}
+.logo{
+    height: auto;
+    max-width: 100%;   
+}
+table img{
+    max-width: 100px;
+    max-height: 100px;
+}
+@media  (min-width: 768px){
+    .logo{
+        min-width: 500px;
+    }
+      
+   }
+@media  (min-width: 992px){
+   table img{
+        min-width: 350px;
+        min-height: 250px;
+    }
+
+}

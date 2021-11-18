@@ -1,0 +1,21 @@
+.cust{
+    background: url('../../assets/images/customer.png');
+    background-position: left top;
+    background-repeat:no-repeat;
+    height: 300px;
+    overflow-x: hidden;
+    background-size:contain
+}
+.logo{
+    height: auto;
+    max-width: 100%;   
+}
+@media  (min-width: 768px){
+    .logo{
+        min-width: 500px;
+    }
+    .cust{
+        background-repeat:repeat;
+    }
+      
+   }

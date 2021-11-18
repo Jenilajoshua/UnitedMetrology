@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+h1{
+    font-family: 'Luckiest Guy', cursive;
+}
+.full{
+    background: url('../../../assets/images/motherboard.png') ;
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+    background-size:cover;
+}

@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center h-100">
+    <div class="card">
+        <div class="card-header text-center text-dark">
+            <h3>Sign In</h3>
+        </div>
+        <div class="card-body">
+            <form>
+             
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="username" required>
+                    
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="password" required>
+                </div>
+              
+                <div class="input-group form-group mt-3" style="width: 150px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-hospital-user"></i></span>
+                        
+                    </div>
+                    <select (change)="selectChangeHandler($event)"class="form-select" id="all" required >
+                        <option value="" default>Click</option>
+                        <option value="1">User</option>
+                        <option value="2">Admin</option>                     
+                    </select>
+                   </div>
+                <!-- <div class="form-group">
+                    <button type="button"  class="btn btn-warning float-right login_btn" >Login</button>
+                </div> -->
+            </form>
+        </div>
+        <div class="card-footer mb-2">
+            <div class="d-flex justify-content-center links">
+                Dialysis therapy to kidney patients across India.
+            </div>
+    <a routerLink="form">Click</a>
+        </div>
+    </div>
+</div>

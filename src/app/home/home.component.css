@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    height: auto;
+    max-width: 100%;   
+}
+.fullpage{
+
+    background-image: url('../../assets/images/logo_green.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* overflow-x: hidden; */
+    background-size:cover;  
+
+}
+.para{
+    font-family: 'Permanent Marker', cursive;
+}
+@media  (min-width: 768px){
+ .logo{
+     min-width: 500px;
+ }
+   
+}
+@media  (min-width: 992px){
+    .logo{
+        min-width: 700px;
+    }
+    .para{
+        font-size:60px;
+        margin-left: 20px;
+    }
+}
