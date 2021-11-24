@@ -4,43 +4,38 @@
             <h3>Sign In</h3>
         </div>
         <div class="card-body">
-            <form>
+            <form name="formdetail" #logindetail="ngForm" > 
              
                 <div class="input-group form-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-user"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="username" required>
+                    <input type="text" required class="form-control" placeholder="username" name="NAME" required ngModel>
                     
                 </div>
                 <div class="input-group form-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-key"></i></span>
                     </div>
-                    <input type="password" class="form-control" placeholder="password" required>
+                    <input type="email" required class="form-control" placeholder="Email" name="EMAIL" required ngModel>
                 </div>
-              
-                <div class="input-group form-group mt-3" style="width: 150px;">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-hospital-user"></i></span>
-                        
-                    </div>
-                    <select (change)="selectChangeHandler($event)"class="form-select" id="all" required >
-                        <option value="" default>Click</option>
-                        <option value="1">User</option>
-                        <option value="2">Admin</option>                     
-                    </select>
-                   </div>
-                <!-- <div class="form-group">
-                    <button type="button"  class="btn btn-warning float-right login_btn" >Login</button>
-                </div> -->
+                
+                <div class="form-group">
+                    <button type="button"  class="btn btn-primary float-right login_btn mx-2" (click)="onSubmit(logindetail.value)">USER</button>
+                    <button type="button"  class="btn btn-danger float-right login_btn" (click)="onAdmin(logindetail.value)">ADMIN</button>
+                </div>             
+                
             </form>
+           
         </div>
         <div class="card-footer mb-2 text-center">
+            <div class="alert alert-danger mt-3 mb-3" *ngIf="logerror" role="alert">     
+                <div class="close" (click)="onClosemessage()">x</div> 
+                Login failed !! Please Enter valid Email
+                  </div>
             <div class="d-flex justify-content-center links ">
                 Manufacturer in Padi, Chennai<br>Open until 18:00<br>Sunday closed
             </div>
     <a routerLink="form">Get Quote</a>
         </div>
-    </div>
 </div>

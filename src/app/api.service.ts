@@ -11,7 +11,7 @@ export class APIService {
     return this.http.get('https://rulhpq03nk.execute-api.ap-south-1.amazonaws.com/fetch/id');
     
   }
-  // postcustomerdata(da){
-  // return this.http.post('https://rulhpq03nk.execute-api.ap-south-1.amazonaws.com/update/id',data)
-  // }
+  admindata(){
+  return this.http.get('https://7xbn7mwydg.execute-api.ap-south-1.amazonaws.com/admins/email')
+  }
 }

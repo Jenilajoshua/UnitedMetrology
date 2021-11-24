@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from '../model';
 import { APIService } from '../api.service';
-import { HttpHeaders } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 
 export interface people {
@@ -21,43 +19,18 @@ export interface people {
 export class AdminComponent implements OnInit {
 customers: any
 Items:any=[]
-  param = { // OPTIONAL
-    headers: new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': 'Content-Type',
-      'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT'
-  
-    }), // OPTIONAL
-    response: true, // OPTIONAL (return the entire Axios response object instead of only response.data)
-    queryStringParameters: { },
-};
+detail:any= [];
+success: boolean=false;
+disabled:boolean=false;
 
-  headers: any={}
-  detail:any= [];
-  success: boolean=false;
-  disabled:boolean=false;
-  // customer:people[]=this.customers;
 
   constructor(private api:APIService , private http:HttpClient) { }
   display:boolean=false;
   formdisplay:boolean=false;
   
   status=['Success','Cancelled','In Progress']
-
-
-  onnew(det:any){
-    // this.customer.push(det.value);
-    // det.reset()
-
-  }
-
   onview(){
   this.display=true;
-  // this.api.getcustdata().subscribe((data)=>this.customers=(data))
-    // this.headers=Object.keys(this.customers)
-    // console.log("cust",this.customers)
-    // console.log("cust",this.headers)
   }
   onCloseClick(){
     this.display=false
@@ -86,15 +59,7 @@ Items:any=[]
 
     })
 
-    // this.api.getcustdata().subscribe((data)=>
-    // {
-    //   this.customers.push(Object.keys(data));
-    //   console.log("data",data)
-    //   console.log("cust",this.customers)
 
-    // })
-
-    // this.headers=Object.keys(this.customers)
     
 }
      
