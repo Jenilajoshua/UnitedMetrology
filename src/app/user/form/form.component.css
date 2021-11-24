@@ -10,3 +10,18 @@ h1{
     overflow-x: hidden;
     background-size:cover;
 }
+.logo{
+    height: auto;
+    max-width: 100%;   
+}
+@media  (min-width: 768px){
+    .logo{
+        min-width: 500px;
+    }
+      
+}
+@media  (min-width: 992px){
+    .logo{
+        min-width: 700px;
+    }
+}

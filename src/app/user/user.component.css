@@ -7,6 +7,9 @@ h1{
     height: auto;
     max-width: 100%;   
 }
+.block1{
+    background-color: rgba(49, 127, 230, 0.801);
+}
 table img{
     max-width: 100px;
     max-height: 100px;
@@ -15,12 +18,19 @@ table img{
     .logo{
         min-width: 500px;
     }
+    .block1{
+        min-height: 100%;
+    }
       
    }
 @media  (min-width: 992px){
    table img{
         min-width: 350px;
         min-height: 250px;
+    }
+    .logo{
+        min-width: 700px;
+     
     }
 
 }
