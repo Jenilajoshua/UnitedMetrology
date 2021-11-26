@@ -14,7 +14,7 @@
     background-image: url('../../assets/images/logo_green.jpg');
     background-position: left top;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 120vh;
     /* overflow-x: hidden; */
     background-size:cover;  
 
@@ -25,6 +25,9 @@
 @media  (min-width: 768px){
  .logo{
      min-width: 500px;
+ }
+ .info{
+     max-width: 300px;
  }
    
 }

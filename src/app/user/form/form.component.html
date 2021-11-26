@@ -8,24 +8,24 @@
     <h1 class="mt-5 text-center">Get in touch with us.</h1>
     <div class="card container">
     <div class="container-fluid">
-    <form  class="formstyle mt-5" action="https://formspree.io/xyydzyqq" method="POST" role="form">
+    <form  class="formstyle mt-5" data-toggle="validator" action="http://formspree.io/f/mjvlbgpp" method="POST" role="form" id="formref">
         <h4>Please fill your details</h4>
     <div class="row mt-3">
     <div class="col-sm-12 form-group">                        
-        <input type="text" required name="Name" class="form-control" placeholder="Name"  ngModel>                        
+        <input type="text" required name="Name" class="form-control" placeholder="Name"  >                        
     </div>
     <div class="col-sm-12 form-group">                        
-        <input type="number" required name="Phone_number" class="form-control" placeholder="Phone number"  ngModel>                       
+        <input type="number" required name="Phone_number" class="form-control" placeholder="Phone number"  >                       
     </div>
     <div class="form-group"  >      
         <div class="form-check-inline" >
-            <input class="form-check-input" type="radio" name="gender" value="M" ngModel > 
+            <input class="form-check-input" type="radio" name="gender" value="M"  > 
             <label class="form-check-label" for="flexRadioDefault1">
             Male
             </label>
         </div>
         <div class="form-check-inline">
-            <input class="form-check-input" type="radio" name="gender" value="F" ngModel >
+            <input class="form-check-input" type="radio" name="gender" value="F"  >
             <label class="form-check-label" for="flexRadioDefault2">
             Female
             </label>
@@ -35,15 +35,15 @@
 
     <div class="col-sm-12 form-group" >   
         <label for="add"> Email</label>                     
-        <input type="email" required  name="Email" ngModel class="form-control" >                    
+        <input type="email" required  name="Email"  class="form-control" >                    
     </div>
     <div class="col-sm-12 form-group" >   
         <label for="add"> How can we help you !!</label>                     
-        <textarea type="text-center" required height="150px;" name="Message" ngModel class="form-control" > </textarea>                      
+        <textarea type="text-center" required height="150px;" name="Message"  class="form-control" > </textarea>                      
     </div>
     <div class="col-sm-12 form-group" >
         <div class="row">
-            <div class="col-6"><button type="submit" class="btn btn-primary" value="infozip90@gmail.com">Get in touch</button></div>
+            <div class="col-6"><button type="button"  class="btn btn-primary" value="infozip90@gmail.com">Get in touch</button></div>
             <div class="col-6"><button type="reset" class="btn btn-warning">Reset</button></div>
         </div>
             
